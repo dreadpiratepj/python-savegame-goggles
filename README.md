@@ -20,7 +20,7 @@ documentation on the savegame format.
 
 ### Command format
 
-sg-goggles savegame-file-path [operation] [wildcard] [-outpath path]
+sg-googles.py [-h] [-outpath outpath] savegame operation [wildcard]
 
 ### Operations
 
