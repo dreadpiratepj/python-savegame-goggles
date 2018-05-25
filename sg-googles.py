@@ -68,7 +68,7 @@ def read_dpfs_header(file_desc):
     fields = ['dpfs', 'magic', 'offset_0', 'size_0', 'blocks_0', 'offset_1',
     'size_1', 'blocks_1', 'offset_2', 'size_2', 'blocks_2']
     signature = '<4sLQQLQQLQQL'
-    header = namedtuple('disf_header', ' '.join(fields))
+    header = namedtuple('dpfs_header', ' '.join(fields))
     return header._make(unpack(signature, record))
 
 
